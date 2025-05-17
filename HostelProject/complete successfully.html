@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Success - Hostel Management</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('https://tse2.mm.bing.net/th?id=OIP.xiJHFxtTb-8cpg2hZ2-FZAHaE1&pid=Api&P=0&h=180');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .success-box {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #00FFAB;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .success-box h1 {
+      font-size: 40px;
+      color: #00FFAB;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    .success-box p {
+      font-size: 20px;
+      color: #FFD700;
+      margin-bottom: 30px;
+    }
+
+    .success-icon {
+      font-size: 80px;
+      color: #00FFAB;
+      margin-bottom: 20px;
+      animation: bounce 1s infinite alternate;
+    }
+
+    .btn-home {
+      padding: 12px 25px;
+      background-color: #2196F3;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .btn-home:hover {
+      background-color: #1769aa;
+    }
+
+    @keyframes bounce {
+      from { transform: translateY(0); }
+      to { transform: translateY(-10px); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="success-box">
+    <div class="success-icon">
+      <i class="fas fa-check-circle"></i>
+    </div>
+    <h1>Submission Successful!</h1>
+    <p>Thank you. Your information has been submitted successfully.</p>
+    <a href="dashboard.html" class="btn-home">Back to Dashboard</a>
+  </div>
+
+</body>
+</html>

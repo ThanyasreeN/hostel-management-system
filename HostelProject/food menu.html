@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hostel Food Menu</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('https://i.pinimg.com/originals/70/27/34/702734cbd05746a3bc5a81246c1256ed.jpg'); /* Background image */
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .menu-container {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 40px;
+      margin: 50px auto;
+      max-width: 1000px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 36px;
+      color: #FFEB3B;
+      text-shadow: 2px 2px 4px #000;
+      margin-bottom: 30px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .menu-item {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.05);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-bottom: 3px solid #FF9800;
+    }
+
+    .menu-content {
+      padding: 15px;
+    }
+
+    .menu-content h3 {
+      color: #FF9800;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    .menu-content p {
+      font-size: 15px;
+      color: #E0F7FA;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu-container">
+    <h2>Weekly Hostel Food Menu</h2>
+    <div class="menu-grid">
+
+      <div class="menu-item">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.Ufw0goKNPwhSDqI2YCWTmgHaE8&pid=Api&P=0&h=180" alt="Monday Menu">
+        <div class="menu-content">
+          <h3>Monday</h3>
+          <p>Breakfast: Idli & Sambar<br>Lunch: Veg Biryani<br>Dinner: Chapathi & Kurma</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.JnT77L1U_D10_TuD4t4RDAHaG_&pid=Api&P=0&h=180" alt="Tuesday Menu">
+        <div class="menu-content">
+          <h3>Tuesday</h3>
+          <p>Breakfast: Dosa & Chutney<br>Lunch: Sambar Rice & Potato Fry<br>Dinner: Lemon Rice & Chips</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://www.cypressgreen.in/blog/wp-content/uploads/2021/03/food-2048x1366.jpg" alt="Wednesday Menu">
+        <div class="menu-content">
+          <h3>Wednesday</h3>
+          <p>Breakfast: Pongal & Vada<br>Lunch: Veg Pulao<br>Dinner: Poori & Chana Masala</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.eXGYRoa5qyrZrJn-PMEfDgHaEl&pid=Api&P=0&h=180" alt="Thursday Menu">
+        <div class="menu-content">
+          <h3>Thursday</h3>
+          <p>Breakfast: Bread Omelette<br>Lunch: Tomato Rice & Curd<br>Dinner: Dosa & Coconut Chutney</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.L7gVEfFeBhsZcwixAOs3TgHaFj&pid=Api&P=0&h=180" alt="Friday Menu">
+        <div class="menu-content">
+          <h3>Friday</h3>
+          <p>Breakfast: Upma & Banana<br>Lunch: Veg Fried Rice<br>Dinner: Chapathi & Paneer Butter Masala</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.pviiqj3olxcnc17XudSbagHaEJ&pid=Api&P=0&h=180" alt="Saturday Menu">
+        <div class="menu-content">
+          <h3>Saturday</h3>
+          <p>Breakfast: Idiyappam & Coconut Milk<br>Lunch: Special Meals<br>Dinner: Egg Curry & Rice</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.2mGppmx9cve8aBbt9TZzNwHaE8&pid=Api&P=0&h=180" alt="Sunday Menu">
+        <div class="menu-content">
+          <h3>Sunday</h3>
+          <p>Breakfast: Aloo Paratha<br>Lunch: Chicken Biryani<br>Dinner: Curd Rice & Pickle</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

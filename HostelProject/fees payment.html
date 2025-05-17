@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fees Payment - Hostel Management System</title>
+  <style>
+    body {
+      background-image: url('https://d1tm14lrsghf7q.cloudfront.net/media/files/rtf/2018_03_FRAME/LAVA-Bayreuth_Youth_Hostel_2.jpg'); /* Replace with your preferred image */
+      background-size: cover;
+      background-position: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: white;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    h2 {
+      text-align: center;
+      color: #FFD700;
+      font-size: 36px;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    label {
+      font-size: 16px;
+      font-weight: bold;
+      display: block;
+      margin: 15px 0 5px;
+      color: #00E5FF;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background-color: #f1f1f1;
+      font-size: 16px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    input:focus, select:focus {
+      outline: none;
+      background-color: #e0f7fa;
+      border: 2px solid #00E5FF;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background-color: #FF4081;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #E91E63;
+    }
+
+    .note {
+      text-align: center;
+      color: #90CAF9;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .highlight {
+      color: #00FFAB;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Fees Payment</h2>
+    <form>
+      <label for="studentName">Student Name:</label>
+      <input type="text" id="studentName" name="studentName" placeholder="Enter your full name" required>
+
+      <label for="studentId">Student ID:</label>
+      <input type="text" id="studentId" name="studentId" placeholder="Enter your ID" required>
+
+      <label for="roomNo">Room Number:</label>
+      <input type="text" id="roomNo" name="roomNo" placeholder="Room No" required>
+
+      <label for="amount">Amount to Pay (INR):</label>
+      <input type="number" id="amount" name="amount" placeholder="e.g. 15000" required>
+
+      <label for="paymentMethod">Payment Method:</label>
+      <select id="paymentMethod" name="paymentMethod">
+        <option value="upi">UPI</option>
+        <option value="credit">Credit Card</option>
+        <option value="debit">Debit Card</option>
+        <option value="netbanking">Net Banking</option>
+      </select>
+
+      <label for="transactionId">Transaction ID:</label>
+      <input type="text" id="transactionId" name="transactionId" placeholder="Enter transaction ID" required>
+
+      <button type="submit">Submit Payment</button>
+      <p class="note">* Please keep your <span class="highlight">transaction ID</span> for future reference.</p>
+    </form>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feedback Form - Hostel Management</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('https://southeastasiabackpacker.com/wp-content/uploads/2017/05/Brick-House-Hostel-1200x800_c.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.75);
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    }
+
+    h2 {
+      text-align: center;
+      color: #00e5ff;
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-size: 16px;
+      color: #FFD700;
+    }
+
+    input[type="text"], input[type="email"], textarea, select {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: #ddd;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #00C853;
+      color: white;
+      border: none;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #00BFA5;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Give Your Feedback</h2>
+    <form>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+
+      <label for="email">Email (optional):</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+
+      <label for="feedbackType">Type of Feedback:</label>
+      <select id="feedbackType" name="feedbackType">
+        <option value="general">General</option>
+        <option value="room">Room Related</option>
+        <option value="food">Food Quality</option>
+        <option value="facilities">Facilities</option>
+        <option value="complaint">Complaint</option>
+      </select>
+
+      <label for="comments">Your Comments:</label>
+      <textarea id="comments" name="comments" rows="5" placeholder="Write your feedback here..."></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+
+</body>
+</html>

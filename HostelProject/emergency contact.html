@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emergency Contact - Hostel Management</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('https://c1.wallpaperflare.com/preview/139/426/534/hostel-home-architecture-interior.jpg'); /* Emergency themed image */
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.75);
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      color: #FF5252;
+      text-shadow: 1px 1px 4px #000;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-size: 16px;
+      color: #FFEB3B;
+    }
+
+    input[type="text"], input[type="tel"], input[type="email"], textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: #ddd;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #ff1744;
+      color: white;
+      border: none;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #d50000;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Emergency Contact Details</h2>
+    <form>
+      <label for="studentName">Student Name:</label>
+      <input type="text" id="studentName" name="studentName" placeholder="Enter your full name">
+
+      <label for="emergencyName">Emergency Contact Name:</label>
+      <input type="text" id="emergencyName" name="emergencyName" placeholder="Parent/Guardian Name">
+
+      <label for="relation">Relationship:</label>
+      <input type="text" id="relation" name="relation" placeholder="e.g., Father, Mother">
+
+      <label for="emergencyPhone">Phone Number:</label>
+      <input type="tel" id="emergencyPhone" name="emergencyPhone" placeholder="Enter emergency phone number">
+
+      <label for="email">Email Address (optional):</label>
+      <input type="email" id="email" name="email" placeholder="Enter email address">
+
+      <label for="address">Emergency Address:</label>
+      <textarea id="address" name="address" rows="3" placeholder="Enter complete address"></textarea>
+
+      <button type="submit">Save Emergency Contact</button>
+    </form>
+  </div>
+
+</body>
+</html>
